@@ -5,6 +5,7 @@
       fixed
       app
     >
+    
       <v-list>
         <v-list-item>
         <v-list-item-content>
@@ -32,6 +33,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+
     <v-app-bar
       fixed
       app
@@ -42,10 +44,9 @@
       <v-spacer />
       
     </v-app-bar>
-    <v-main>
-      <v-container>
+
+    <v-main style="background-image: url('https://cdn.wallpapersafari.com/7/74/JFeEHc.jpg');background-size:cover;background-position:center center; background-attachment:fixed;">
         <nuxt />
-      </v-container>
     </v-main>
    <v-footer
     color=""
@@ -122,9 +123,5 @@ export default {
 </script>
 
 <style>
-#app {
-  background: url('https://cdn.wallpapersafari.com/7/74/JFeEHc.jpg')
-    no-repeat center center fixed !important;
-  background-size: cover;
-}
-</style><!--https://cdn.wallpapersafari.com/4/69/gZRPBJ.jpg
+
+</style>
