@@ -103,6 +103,11 @@ export default {
           title:'Войти',
           to:'/auth'
         },
+        {
+          icon:'mdi-apps',
+          title:'Create team',
+          to:'/create'
+        }
       ],
       links: [
         'Home',

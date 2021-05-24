@@ -61,7 +61,28 @@
 </template>
 
 <script>
-
+export default{
+  data(){
+    return{
+      email:'',
+      pass:''
+    }
+  },
+  methods:{
+    getToken(){
+      this.axios({
+        method: 'post',
+        url:'/auth',
+        data:{
+          email:this.email,
+          pass:this.pass
+        }
+      }).then((res)=>{
+        this.$store.commit('setToken',res.data)
+      })
+    }
+  }
+}
 </script>
 
 <style>
