@@ -38,7 +38,7 @@
                 Forgot password?
               </v-btn>
               <v-spacer></v-spacer>
-              <v-btn color="info" :large="$vuetify.breakpoint.smAndUp">
+              <v-btn color="info" :large="$vuetify.breakpoint.smAndUp" @click='getToken()'>
                 <v-icon left>lock</v-icon>
                 Login
               </v-btn>
